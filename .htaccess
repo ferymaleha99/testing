@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ blok.php?url=http://vod.linknetott.swiftcontent.com/$1 [L,QSA]
+</IfModule>
